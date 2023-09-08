@@ -1,0 +1,163 @@
+//Q 17 Java program to check even or odd number.
+	public class Main {
+    public static void main(String[] args) {
+        int a=5;
+        if ((a%2)==0){
+            System.out.println("this is an even number");
+
+        }
+        else {
+            System.out.println("this is an odd number");
+        }
+    }
+}
+//Q 18 Java program to find average of two numbers.	
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first number.");
+        int a=sc.nextInt();
+        System.out.println("enter second number.");
+        int b=sc.nextInt();
+        float i = (a + b) / 2;
+        System.out.println("Average for given two numbers" +" "+(i));
+
+    }
+}
+//Q19 Java program to swap two numbers.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first number.");
+        int a=sc.nextInt();
+        System.out.println("enter second number.");
+        int b=sc.nextInt();
+        int c=0;
+        c=a;
+        a=b;
+        b=c;
+        System.out.println(a+" "+b);
+    }
+}
+//Q20 java program to check whether a number is prime or not.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any positive number.");
+        int a=sc.nextInt();
+        boolean isprime = true;
+        if (a<=3&&a>0&&a!=1){
+            System.out.println("this is a prime number");
+        }
+        else{
+            for (int i=5;i<a;i++){
+                if (a%i==0){
+                    isprime=false;
+
+                    break;
+                }
+
+                }
+            if (isprime){
+                System.out.println("this number is not a prime number");
+            }else {
+                System.out.println("this number is a prime number");
+            }
+
+        }
+
+    }
+}
+
+//Q21 Java program to find table of n
+	import java.sql.SQLOutput;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any positive number.");
+        int num1=sc.nextInt();
+        System.out.println("Table for "+num1);
+        for (int i=1;i<=10;i++){
+            System.out.println(num1*i);
+        }
+
+
+    }
+}
+
+//Q22 java program to find the largest of three numbers.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first number.");
+        int num1=sc.nextInt();
+        System.out.println("enter second number.");
+        int num2=sc.nextInt();
+        System.out.println("enter third number.");
+        int num3=sc.nextInt();
+        if (num1>num2&&num1>num3){
+            System.out.println(num1+" is largest number");
+        } else if (num2>num1&&num2>num3) {
+            System.out.println(num2+" is largest number");
+        }else {
+            System.out.println(num3+" is largest number");
+        }
+    }
+}
+
+//Q23 Java program to calculate simple intrest.
+import java.sql.SQLOutput;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter Principal Amount.");
+        int Principal=sc.nextInt();
+        System.out.println("enter Intrest rate.");
+        int Roi=sc.nextInt();
+        System.out.println("enter Loan tenure(Years).");
+        int Tenure=sc.nextInt();
+        int SI=(Principal*Roi*Tenure)/100;
+        System.out.println("Intrest = "+ SI);
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+//Q24 java program to find character is vowel or consnaint.
+import java.sql.SQLOutput;
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Length of the rectangle.");
+        char ch=sc.next().charAt(0);
+        ch=Character.toLowerCase(ch);
+        if (ch>='a'&&ch<='z'){
+            if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') {
+                System.out.println("given character is a vowel.");
+            }else {
+                System.out.println("given charater is a consonaint");
+            }
+        }
+
+
+
+    }
+}
+
